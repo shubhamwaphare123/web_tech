@@ -1,0 +1,105 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: #ECF0F1 ;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-caption{
+    z-index: 2; 
+}
+#nav{
+    position:fixed;
+    top: 0px;
+}
+.nav-item a{
+    color: black;
+    text-transform: uppercase;
+}
+
+#team .card-body img{
+    border-radius: 70%;
+}
+
+#project .card{
+    box-shadow: 15px 15px 40px rgba(0,0,0,0.25);
+}
+p{
+    font-size: 15px;
+}
+#about, #service, #project,#team,#slider{
+    margin-bottom: 90px;
+}
+
+
+
+
+
+
+/* mediaQiery  */
+
+@media only screen and (max-width :767px) {
+    .carousel-item h5{
+        font-size: 20px;
+    }
+    .carousel-item p{
+        font-size: 10px;
+    }
+     .btn{
+        width: 80px;
+        font-size: 10px;
+        height: auto;
+    }
+
+    .about-content{
+        font-size: 13px;
+    }
+     p{
+        font-size: 13px;
+    }
+    .about-img{
+    display:flex;
+    justify-content: center;  
+    }
+    .about-img img{
+        width: 200px;
+    }
+    .card{
+    margin-bottom: 10px;
+    }
+
+}
+
+
+@media only screen and (max-width :990px) {
+    #team .card{
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: 13px;
+    }
+    .card{
+        margin-bottom: 10px;
+        }
+       
+        .about-img img{
+            width: 300px;
+        }
+        .about-img{
+            display:flex;
+            justify-content: center;  
+            }
+}
